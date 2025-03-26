@@ -1,0 +1,76 @@
+
+/* Estilo para el contenedor principal */
+.container-nosotros {
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    margin: 20px;
+    padding: 40px;
+    background-color: #f4f4f4;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+    url("../img/imagen\ de\ estadistica.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background-color: white transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Estilo para el encabezado principal */
+.h1Nosotros>h1{
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.sobre-nosotros>h2, 
+.mision>h2, 
+.vision>h2, 
+.valores>h2 {
+    font-size: 2rem;
+    color: #000000;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sobre-nosotros>p, 
+.mision>p, 
+.vision>p, 
+.valores>p {
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los párrafos de valores */
+.valores p strong {
+    color: #007bff;
+}
+
+
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .container-nosotros {
+        padding: 20px;
+    }
+
+    .h1Nosotros h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}

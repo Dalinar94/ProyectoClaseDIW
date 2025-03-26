@@ -1,0 +1,150 @@
+/* Estilos para el contenedor del carrito */
+#carro{
+  margin-top: 1%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #b4b4b4;
+  padding: 20px;
+
+}
+
+#carrito{
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 1.2em;
+  flex-wrap: wrap; 
+}
+#carro button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #083652;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  
+  &:hover{
+    background-color: #042136;
+  }
+
+}
+#carro p{
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+}
+#carro li{
+  color: #000000;
+  font-size: 1.2em;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #db6c6c;
+  gap: 10px;
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+#carro h3{
+  color: #000000;
+  font-size: 1.2em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#carro h1{
+  color: #000000;
+  font-size: 2.5em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+
+/* Media queries para pantallas grandes */
+@media (min-width: 1200px) {
+  #carrito {
+    flex-direction: row;
+    gap: 30px;
+    padding: 10%;
+  }
+
+  #carro button {
+    font-size: 1.6em;
+  }
+  #carro h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  } 
+
+
+  #carro p, #carro li, #carro h3{
+    font-size: 1.6em;
+  }
+}
+
+/* Media queries para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1199px) {
+  #carrito {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #carro button {
+    font-size: 1.3em;
+  }
+
+  #carro p, #carro li, #carro h3, #carro h1 {
+    font-size: 1.3em;
+  }
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 767px) {
+  #carrito {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #carro button {
+    font-size: 1.2em;
+  }
+
+  #carro p, #carro li, #carro h3, #carro h1 {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,28 @@
+/* Contenedor del video ajustado al espacio entre el menú y el footer */
+.video-container {
+    position: relative;
+    width: 100%; /* El contenedor ocupa todo el ancho */
+    height: calc(100vh - -100px); /* Ajusta la altura del video (por ejemplo, 120px es la altura del menú y footer combinados, ajusta según tu diseño) */
+    overflow: hidden; /* Asegura que el contenido fuera del contenedor no se vea */
+}
+
+/* Estilos para el video dentro del contenedor */
+.video-container video {
+    position: absolute;
+    width: 100%; /* El video ocupa todo el ancho del contenedor */
+    height: 100%; /* El video ocupa todo el alto del contenedor */
+    object-fit:cover; /* Hace que el video cubra todo el contenedor, puede recortar si es necesario */
+}
+
+@media only screen and (max-width: 768px){
+    /* Estilos para el logo */
+   .video-container{
+    height: 220px; /* Ajusta la altura del video */
+    width: 100%;
+    overflow: hidden;
+
+    }
+   
+   
+}
+

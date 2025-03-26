@@ -1,0 +1,79 @@
+.search-input{
+    float: left;
+    padding: 10px;
+    width: 50%;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid var(--color-gray);
+}
+.search-input:focus{
+    box-shadow: none;
+}
+.select-order{
+    float:right;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.product-box{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.product-box:hover{
+    text-decoration: none;
+}
+/*transicion para que el hover no sea tan brusco*/
+.product-box img{
+    transition: all 0.3s;
+}
+/*muestra la imagen un poco mas grande para dar un efecto chulo cuando pasas el raton por dicha imagen*/
+.product-box:hover img{
+    transform: scale(1.05);
+}
+
+.product-box h3{
+    font-size: 25px;
+    font-weight: normal;
+    
+}
+.product-box .offer{
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-box .offer.hidden{
+    visibility: hidden;
+}
+
+.product-box .price{
+    font-size: 20px;
+}
+
+.product-box strong del{
+    font-size: 14px;
+    font-weight: none;
+    margin-bottom: 5px;
+}
+
+.paginacion{
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+}
+.paginacion li{
+    display: inline-block;
+}
+.paginacion li a{
+    color:black;
+    padding:5px;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.paginacion li a.active{
+    border: 1px solid black;
+}

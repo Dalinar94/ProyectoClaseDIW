@@ -1,0 +1,160 @@
+.body-contacto{
+    background-image: url("/img/imagen\ de\ estadistica.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+/* Contenedor principal del formulario */
+.container-form {
+    background-color: #fff;
+    padding: 40px;
+    margin: 50px auto;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: gray;
+    color: #fff;
+    border: solid 2px black;
+}
+
+/* Estilo del título */
+.container-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los campos de formulario */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Estilo de los inputs y textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efectos en los campos cuando son enfocados */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #000000; /* Color naranja cuando se enfoca */
+    background-color: #fef6e4; /* Fondo suave cuando se enfoca */
+    outline: none;
+}
+
+/* Estilo para el área de texto */
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Estilo de la caja de términos y condiciones */
+.caja-politicas {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: #000000; /* Color suave */
+    text-shadow: 2px 2px 2px rgb(65, 64, 64);
+
+}
+
+.caja-politicas input {
+    margin-right: 10px;
+}
+
+/* Estilo del botón de envío */
+    #boton{
+    background-color: #03ff89; 
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    transition: background-color 0.3s ease;
+}
+#reset{
+    background-color: #E04F41;
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Estilo de la ventana de éxito */
+#successMessage {
+    display: none;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #ffffff;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    background-image: url("/img/imagen\ de\ estadistica.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-form h2{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    text-shadow: 5px 5px 5px rgb(65, 64, 64);
+}
+.container-form label{
+    font-size: 25px;
+    color: black;
+    text-shadow: 2px 2px 2px rgb(65, 64, 64);
+}
+
+@media only screen and (max-width: 768px){
+    #reset{
+        width: 50%;
+    }
+    #boton{
+        width: 50%;
+    }
+}

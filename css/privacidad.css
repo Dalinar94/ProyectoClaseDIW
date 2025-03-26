@@ -1,0 +1,16 @@
+section{
+    margin:0;
+    padding: 20px;
+}
+section >p{
+    font-size: 20px;
+}
+section >h1{
+    font-size: 50px;
+}
+section>h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+
+}

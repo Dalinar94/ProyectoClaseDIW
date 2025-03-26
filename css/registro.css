@@ -1,0 +1,87 @@
+/* Estilos para el contenedor principal del registro */
+.caja-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor del formulario de registro */
+.caja-registro .form-registro {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título del formulario de registro */
+.caja-registro .form-registro .h2-registro {
+    margin: 0 0 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para los inputs del registro */
+.caja-registro .form-registro input[type="text"],
+.caja-registro .form-registro input[type="email"],
+.caja-registro .form-registro input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto al enfocar los inputs del registro */
+.caja-registro .form-registro input[type="text"]:focus,
+.caja-registro .form-registro input[type="email"]:focus,
+.caja-registro .form-registro input[type="password"]:focus {
+    border-color: #ff7e5f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+}
+
+/* Estilos para el botón de registro */
+.caja-registro .form-registro button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ff7e5f;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón de registro */
+.caja-registro .form-registro button:hover {
+    background-color: #feb47b;
+}
+
+/* Enlace alternativo de inicio de sesión */
+.caja-registro .form-registro .enlace-login {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.caja-registro .form-registro .enlace-login a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover para el enlace de inicio de sesión */
+.caja-registro .form-registro .enlace-login a:hover {
+    color: #feb47b;
+}

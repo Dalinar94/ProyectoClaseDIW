@@ -1,0 +1,55 @@
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(59, 59, 59, 0.8); /* Gris oscuro con 80% de opacidad */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+}
+
+#cookie-banner p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+
+#cookie-banner a {
+    color: #4CAF50; /* Verde */
+    text-decoration: none;
+}
+
+#cookie-banner a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los botones */
+#cookie-banner button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px; /* Espacio entre los botones */
+    transition: all 0.3s ease; /* Efecto suave de transición */
+}
+
+#cookie-banner button:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+#cookie-banner button:active {
+    background-color: #388e3c; /* Color aún más oscuro al hacer clic */
+    transform: translateY(2px); /* Efecto de presionar el botón */
+}
+
+#cookie-banner button:focus {
+    outline: none; /* Quitar el borde al hacer clic */
+    box-shadow: 0 0 10px #4CAF50; /* Sombra verde cuando está enfocado */
+}

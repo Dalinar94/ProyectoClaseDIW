@@ -1,0 +1,270 @@
+/* Asegura que el header ocupe todo el ancho de la página y una altura fija de 100px */
+.container-full {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header con altura fija */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24191E;
+    color: white;
+    height: 100px; /* Fija la altura */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    padding: 0 20px; /* Añadí padding a los lados para que no se pegue a los bordes */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+/* Fila para distribuir los elementos */
+.row-buscador {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el logo */
+}
+.logo a img{
+    animation: girar 3s linear 0.20s;
+    border-radius: 10px;
+
+}
+/* Definimos la animación de rotación de izquierda a derecha */
+@keyframes girar {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg); /* Mitad del giro */
+    }
+    100% {
+        transform: rotateY(360deg); /* Gira completamente */
+    }
+}
+.foto-perfil-header {
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* Buscador */
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el buscador */
+    width: 100%;
+    gap: 10px
+}
+
+.search-input-buscador {
+    width: 200%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el logo */
+.logo img {
+    margin-right: 10px;
+}
+/* Contenedor general */
+.caja-conjunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px; /* Ajusta el padding según sea necesario */
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Para que se ajusten en pantallas pequeñas */
+    gap: 20px; /* Añade espacio entre los elementos */
+}
+.btn-logout{
+    color: #fc6225;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Caja del carrito */
+.caja-carrito-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Caja del usuario */
+.caja-usuario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilo específico para las imágenes del carrito y usuario */
+.caja-carrito-container img,
+.caja-usuario img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Botón del carrito */
+.btn-carrito {
+    color: #2575fc;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.btn-carrito:hover {
+    color: #6a11cb; /* Cambio de color en hover */
+}
+
+/* Botón del usuario */
+.btn-usuario {
+    color: #2575fc;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.btn-usuario:hover {
+    color: #6a11cb; /* Cambio de color en hover */
+}
+
+/* Para dispositivos móviles (xs y s) */
+@media only screen and (max-width: 768px) {
+    .container-full{
+        height: 250px;
+    }
+    .row-buscador {
+        display: block; /* Hacemos que la fila se apile verticalmente */
+        width: 100%; /* Asegura que la fila ocupe todo el ancho */
+    }
+
+    /* Logo */
+    .logo {
+        text-align: center; /* Centrar el logo */
+        padding-top: 50px;
+    }
+
+    .logo img {
+        width: 65px; /* Reducimos el tamaño del logo */
+        margin-right: 10px; /* Espacio entre el logo y el título */
+    }
+
+    .titulo-productos {
+        font-size: 32px; /* Reducimos el tamaño del título */
+        margin: 0;
+    }
+
+    /* Buscador */
+    .buscador {
+        width: 100%; /* El buscador también ocupa toda la pantalla */
+        text-align: center; /* Centrar el buscador */
+    }
+
+    /* Campo de búsqueda */
+    .search-input-buscador {
+        width: 80%; /* El campo de búsqueda se expande más */
+        padding: 8px; /* Ajustamos el tamaño del padding */
+        margin-top: 5px; /* Espacio para que no esté tan pegado */
+        font-size: 0.9rem; /* Reducimos el tamaño del texto */
+    }
+
+    /* Lupa (icono) */
+    .buscador img {
+        width: 40px; /* Ajustamos el tamaño de la lupa */
+        margin-right: 10px; /* Espacio entre la lupa y el input */
+    }
+    .caja-conjunta{
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        gap:0px;
+        flex-wrap: nowrap;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 5px;
+
+    }
+}
+/* Para dispositivos medianos (md) */
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .container-full{
+        height: 150px;
+    }
+    .row-buscador {
+        display: block; /* Hacemos que la fila se apile verticalmente */
+        width: 100%; /* Asegura que la fila ocupe todo el ancho */
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    /* Logo */
+    .logo {
+        text-align: center; /* Centrar el logo */
+        padding-top: 80px;
+        padding-bottom:0px;
+    }
+    .logo img {
+        width: 80px; /* Reducimos el tamaño del logo */
+        margin-right: 10px; /* Espacio entre el logo y el título */
+    }
+    .titulo-productos {
+        font-size: 32px; /* Reducimos el tamaño del título */
+        margin: 0;
+    }
+    /* Buscador */
+    .buscador {
+        width: 100%; /* El buscador también ocupa toda la pantalla */
+        text-align: center; /* Centrar el buscador */
+        padding-top: 0px;
+        padding-bottom:20px;
+    }
+    /* Campo de búsqueda */
+    .search-input-buscador {
+        width: 200%; /* El campo de búsqueda se expande más */
+        padding: 8px; /* Ajustamos el tamaño del padding */
+        margin-top: 5px; /* Espacio para que no esté tan pegado */
+        font-size: 0.9rem; /* Reducimos el tamaño del texto */
+    }
+    /* Lupa (icono) */
+    .buscador img {
+        width: 40px; /* Ajustamos el tamaño de la lupa */
+        margin-right: 10px; /* Espacio entre la lupa y el input */
+    }
+    .caja-conjunta{
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        gap:0px;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 80px;
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,7 @@
+.product-box img{
+    filter:none(100%);
+}
+.product-box:hover img{
+    transform: scale(1);
+    filter: sepia(100%);
+}

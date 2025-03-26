@@ -1,0 +1,3 @@
+Laura, he usado con el Visual Studio el LiveServer ya que vi un tutorial de como hacer una estructura de web ordenada, por tanto siempre que abro mi web entro en el entorno de VisualStudio y abro la paginaInicio.html con el botón derecho y abrir con LiveServer.
+
+Sino se abre así y se abre directamente desde la carpeta el documento, la mayoría estarán en blanco ya que carga mediante un servidor.

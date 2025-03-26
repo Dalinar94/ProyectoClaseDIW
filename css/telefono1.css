@@ -1,0 +1,82 @@
+/* Estilo principal del contenedor del producto */
+.producto-xiaomi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.carritoTelefono{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+.carritoTelefono>p>a{
+    margin-right: 250px;
+    font-weight: bold;
+}
+/* Estilo para el contenedor de la imagen del producto */
+.imagen-producto {
+    flex: 1;
+    text-align: center;
+}
+
+.imagen-producto img {
+    max-width: 120%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagen-producto img:hover {
+    transform: scale(1.02);
+}
+
+.imagen-producto h1 {
+    font-size: 28px;
+    color: #ff6700;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la sección de información del producto */
+.info-producto {
+    flex: 2;
+}
+
+.titulo-producto {
+    font-size: 24px;
+    color: #ff6700;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6700;
+    padding-bottom: 5px;
+}
+
+/* Estilo para la lista de características */
+.lista-producto {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-producto li {
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.lista-producto li:hover {
+    background-color: #f9f9f9;
+}
+
+.lista-producto strong {
+    color: #333;
+    font-weight: bold;
+}
+
